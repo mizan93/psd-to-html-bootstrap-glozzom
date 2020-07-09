@@ -1,0 +1,194 @@
+$icon-size:50px;
+$dark-overlay: rgba(0,0,0,0.7);
+
+.navbar{
+  background: #000;
+  .nav-item{
+    padding-left: 1em ;
+    .nav-link{
+      text-transform: uppercase;
+    }
+  }
+
+}
+/* ----HOME SECTION----------*/
+.carousel-item{
+  height: 450px;
+}
+.carousel-img-1{
+  background-image: url('../img/image1.jpeg');
+  background-size: cover;
+}
+.carousel-img-2{
+  background-image: url('../img/image2.jpeg');
+  background-size: cover;
+}
+.carousel-img-3{
+  background-image: url('../img/image3.jpeg');
+  background-size: cover;
+}
+.carousel-img-4{
+  background-image: url('../img/image1.jpeg');
+  background-size: cover;
+}
+#homeicon{
+  .fa{
+    font-size: $icon-size;
+  }
+  h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+#getstarted{
+  position: relative;
+  background-image: url('../img/bg1.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  .dark-overlay{
+    background: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+#homevideo{
+  position: relative;
+  background-image: url('../img/people.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  .dark-overlay{
+    position: absolute;
+    background: $dark-overlay;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    .fa{
+      font-size: $icon-size;
+
+    }
+  }
+}
+#gallery{
+  img{
+    min-height: 220px;
+  }
+}
+#footer{
+  font-size: 20px;
+  background: #000000;
+}
+/* ----ABOUTUS SECTION----------*/
+
+#aboutus{
+  position: relative;
+  background-image: url('../img/image1.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  .dark-overlay{
+    background: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+#whatwedo{
+  img{
+    width: 350px;
+    height: 350px;
+  }
+}
+#icon-boxs{
+  .fa{
+    font-size: $icon-size;
+    padding-bottom: 10px;
+  }
+}
+
+/*-------- SIERVICE SECTION------------ */
+#services{
+  background-image: url('../img/image3.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+
+}
+/*-------- BOCK SECTION------------ */
+#blog{
+  background-image: url('../img/image4.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+
+}
+#blog-post{
+  .card-title{
+    border-bottom: 1px solid #E5E5E5;
+    p{
+      padding-bottom: 0;
+      font-size: 13px;
+    }
+  }
+}
+/*-------- CONTACT SECTION------------ */
+#contact{
+  background-image: url('../img/image3.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 250px;
+
+}
+/*-------- MEDIO QUERY------------ */
+
+@media(max-width:767px){
+  .nav-item{
+    padding-left: 0 !important;
+  }
+  #getstarted{
+      min-height: 300px;
+  }
+  #homeinfo{
+    img{
+      padding-top: 20px;
+    }
+  }
+}
+
+
+
+@media(max-width:480px){
+  .carousel{
+    h2{
+      font-size: 2.5rem;
+    }
+    #getstarted{
+        min-height: 400px;
+        margin-top: 30px;
+    }
+    #homeinfo{
+      img{
+        padding-top: 20px;
+      }
+    }
+  }
+
+}
